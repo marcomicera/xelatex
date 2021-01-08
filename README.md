@@ -5,7 +5,7 @@ XeLaTeX in a Docker container.
 ## Build the image locally
 
 ```bash
-make build
+make [TAG=<image_tag>] build
 ```
 
 ## Run linters locally

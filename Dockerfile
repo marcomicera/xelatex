@@ -5,7 +5,7 @@ FROM alpine:${ALPINE_VERSION}
 
 RUN apk update && \
     apk add \
-    texlive-full
+    texlive-full=20190410-r13
 
 # 'xelatex' user
 RUN addgroup -S xelatex && adduser -S -G xelatex xelatex

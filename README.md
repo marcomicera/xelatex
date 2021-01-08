@@ -7,3 +7,9 @@ XeLaTeX in a Docker container.
 ```bash
 make build
 ```
+
+## Run linters locally
+
+```bash
+make linters
+```

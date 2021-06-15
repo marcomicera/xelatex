@@ -8,4 +8,9 @@ build:
 		. 
 
 linters:
-	docker run -e RUN_LOCAL=true -v $(shell pwd -P):/tmp/lint github/super-linter
+	docker run \
+		--rm \
+		--name resume-linters \
+		--env RUN_LOCAL=true \
+		--volume $(shell pwd -P):/tmp/lint \
+		github/super-linter
